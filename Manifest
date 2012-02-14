@@ -1,7 +1,9 @@
+History.md
 Manifest
 Rakefile
 Readme.md
 lib/surround.rb
 lib/surround/base.rb
 spec/spec_helper.rb
+spec/surround/base_spec.rb
 spec/surround_spec.rb
