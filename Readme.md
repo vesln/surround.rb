@@ -9,10 +9,6 @@ Surround.rb port of my surround module for Node.js. The gem provides an easy way
 class SuperHero
   include Surround::Base
 
-  surround :magic, :after do |param|
-    # More magic
-  end
- 
   def magic(param)
     # Do magic here.
   end
@@ -22,7 +18,11 @@ SuperHero.surround :magic, :before do |param|
   # Win!
 end
 
+hero = SuperHero.new
+hero.magic('foo')
+
 SuperHero.restore(:magic) # Clears added surrounders
+
 SuperHero.surrounded?(:magic) # Is it surrounded?
 
 ```
