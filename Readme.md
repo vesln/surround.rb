@@ -23,8 +23,7 @@ SuperHero.surround :magic, :before do |param|
 end
 
 SuperHero.restore(:magic) # Clears added surrounders
-SuperHero.surrounded?(:magic) # Checks if the supplied method is
-surrounded
+SuperHero.surrounded?(:magic) # Is it surrounded?
 
 ```
 
